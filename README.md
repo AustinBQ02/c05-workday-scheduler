@@ -5,12 +5,10 @@ This is challenge 5 for the UT Coding Bootcamp.
 
 ## Description
 
-> Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:  
->   
-> - What was your motivation?  
-> - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")  
-> - What problem does it solve?  
-> - What did you learn?  
+This project is a simple scheduling app run primarily by jQuery, with some dynamic CSS and HTML elements. 
+
+See additional details here: [User Story and Acceptance Criteria](https://github.com/AustinBQ02/c05-workday-scheduler/issues/1)
+
 
 ## Table of Contents
 
@@ -21,15 +19,14 @@ This is challenge 5 for the UT Coding Bootcamp.
 
 ## Installation
 
-> What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+[Word Day Scheduler - GitHub Pages](https://austinbq02.github.io/c05-workday-scheduler/)
 
 ## Usage
 
-> Provide instructions and examples for use. Include screenshots as needed.
->   
-> To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:  
->   
->   `![alt text](assets/images/screenshot.png)`
+Type notes or tasks into the appropriate row for the time of day, then click the save button to the right. 
+Saved notes will repopulate, even if you close the tab and reopen it or refresh the page. 
+
+![Saved Notes](https://user-images.githubusercontent.com/77471738/217719190-a7ccb6ad-e530-4632-9c63-4512a30a530e.jpg)
 
 
 ## Credits
@@ -41,6 +38,8 @@ This is challenge 5 for the UT Coding Bootcamp.
 > If you followed tutorials, include links to those here as well.
 
 Full-Stack Blog - [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+
+Starter Code - https://github.com/coding-boot-camp/crispy-octo-meme 
 
 Day.js - https://day.js.org/
 

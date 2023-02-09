@@ -2,11 +2,11 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(document).ready(function () {
-  
+  var targetParentID
   // Add a listener for click events on the save button. 
   $(".saveBtn").on("click", function (event) {
     // identify row on which save button was pressed
-    const targetParentID = $(this).parent().attr("id");
+    targetParentID = $(this).parent().attr("id");
     // get input from the sibling text field of event target
     const note = $(this).siblings(".description").val();
     // save input to local storage for that specific hour block
@@ -35,7 +35,16 @@ $(document).ready(function () {
 
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. 
-  
+  $(".time-block").each(function savedNotes(){
+    // variable to get hour-id key from local storage
+    const localKey = $(this).attr("id");
+    // variable to store value of hour-id if in local storage
+    const savedNote = localStorage.getItem(localKey);
+    // if there is a saved note in local storage, add it to the correct row
+    if (savedNote) {
+      $(this).children(".description").text(savedNote);
+    }
+  })
 
   // Display the current date in the header of the page.
   function displayDate() {

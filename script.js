@@ -5,8 +5,14 @@ $(document).ready(function () {
   
   // Add a listener for click events on the save button. 
   $(".saveBtn").on("click", function (event) {
+    // identify row on which save button was pressed
     const targetParentID = $(this).parent().attr("id");
-    console.log(`Save button was pressed at ${targetParentID}`)
+    // get input from the sibling text field of event target
+    const note = $(this).siblings(".description").val();
+    // save input to local storage for that specific hour block
+    localStorage.setItem(targetParentID, note);
+
+    console.log(`Save button was pressed at ${targetParentID}. \nThe note reads: ${note}`);
   });
 
 
@@ -28,8 +34,8 @@ $(document).ready(function () {
   });
 
   // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
+  // the values of the corresponding textarea elements. 
+  
 
   // Display the current date in the header of the page.
   function displayDate() {

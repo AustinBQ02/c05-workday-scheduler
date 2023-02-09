@@ -42,6 +42,8 @@ This is challenge 5 for the UT Coding Bootcamp.
 
 Full-Stack Blog - [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
+Day.js - https://day.js.org/
+
 ## License
 
 Please see LICENSE file.
